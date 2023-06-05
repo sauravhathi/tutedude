@@ -13,14 +13,19 @@
 ## Screenshots
 
 ### Desktop
-![image](https://github.com/sauravhathi/tutedude/assets/61316762/ef53ba2f-3cf1-478f-bcc3-b5195bb822c2)
+![image](https://github.com/sauravhathi/tutedude/assets/61316762/da704147-6b72-403b-bc65-1075841309dd)
 
-![image](https://github.com/sauravhathi/tutedude/assets/61316762/d6619910-90cd-434a-8261-c5e6f4e42aab)
+![image](https://github.com/sauravhathi/tutedude/assets/61316762/6d2b8cfe-05eb-4514-b59e-9191d3238313)
+#### Snap Horizontal Scrolling
+![image](https://github.com/sauravhathi/tutedude/assets/61316762/b59620d0-0ace-4301-9276-a94fd5fd4fc3)
+
 
 ### Mobile
-![image](https://github.com/sauravhathi/tutedude/assets/61316762/ba607b06-2305-47f0-be03-0f49cf89ee4c)
+![image](https://github.com/sauravhathi/tutedude/assets/61316762/48470d92-3180-49cf-a972-0afffa0b2e5c)
 
-![image](https://github.com/sauravhathi/tutedude/assets/61316762/9dffe2b2-787b-4bb9-a93e-c37450bb85d6)
+![image](https://github.com/sauravhathi/tutedude/assets/61316762/f93731ab-98db-4c1e-ba29-315f73a06927)
+#### Snap Vertical Category Scrolling
+![image](https://github.com/sauravhathi/tutedude/assets/61316762/713032d3-2f0f-40c8-b8a7-303540a8c568)
 
 ## Installation
 
