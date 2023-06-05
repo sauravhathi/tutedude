@@ -8,11 +8,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 21px;
+  line-height: $regular-line-height;
   color: $grey-dark;
-  width: 1366px;
+  width: $desktop;
 
-  @media (max-width: 428px) {
+  @media (max-width: $mobile) {
     width: 100%;
   }
 }
@@ -33,7 +33,7 @@ body {
       padding-left: 72px;
       padding-right: 72px;
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         padding-left: 5px;
         padding-right: 10px;
         padding-top: 62px;
@@ -50,7 +50,7 @@ body {
       display: flex;
       align-items: center;
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         background: $purple;
         padding: 15px 15px;
         border-radius: 10px;
@@ -63,7 +63,7 @@ body {
       font-weight: 600;
       text-decoration: none;
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         margin-left: 0px;
         display: none;
       }
@@ -79,7 +79,7 @@ body {
       right: -20px;
       margin-right: 50px;
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         display: block;
         color: $white;
         right: 0px;
@@ -95,7 +95,7 @@ body {
         position: absolute;
         left: -25px;
 
-        @media (max-width: 428px) {
+        @media (max-width: $mobile) {
           display: none;
         }
       }
@@ -109,7 +109,7 @@ body {
         right: -20px;
         top: 35%;
 
-        @media (max-width: 428px) {
+        @media (max-width: $mobile) {
           background: url("/assets/arrow-down-white.svg") no-repeat;
           top: 40%;
         }
@@ -117,20 +117,13 @@ body {
     }
 
     .breadcrumb {
-      padding-left: 187px;
-      padding-right: 187px;
       display: flex;
       align-items: center;
       height: 76px;
 
-      @media (max-width: 428px) {
-        padding-left: 35px;
-        padding-right: 35px;
-      }
-
       .breadcrumb__text {
         font-size: $regular-1;
-        line-height: 24px;
+        line-height: $large-line-height;
         color: $black;
 
         .breadcrumb__link {
@@ -140,25 +133,12 @@ body {
         }
       }
     }
-  }
-
-  .container {
-    padding-left: 187px;
-    padding-right: 187px;
-
-    @media (max-width: 428px) {
-      padding: 0px 10px;
-    }
-
-    @media (max-width: 320px) {
-      padding: 0px 5px;
-    }
 
     .back {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-top: 32px;
+      padding-bottom: 20px;
       cursor: pointer;
 
       & > span {
@@ -169,6 +149,19 @@ body {
         display: none;
       }
     }
+  }
+
+  .container {
+    padding-left: 187px;
+    padding-right: 187px;
+
+    @media (max-width: $mobile) {
+      padding: 0px 10px;
+    }
+
+    @media (max-width: 320px) {
+      padding: 0px 5px;
+    }
 
     .dashboard {
       margin-top: 32px;
@@ -176,7 +169,7 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         flex-direction: column;
         gap: 20px;
       }
@@ -194,7 +187,7 @@ body {
           align-items: self-start;
           gap: 40px;
 
-          @media (max-width: 428px) {
+          @media (max-width: $mobile) {
             gap: 0px;
           }
 
@@ -214,7 +207,7 @@ body {
               font-size: $extra-large;
               font-weight: $bold;
 
-              @media (max-width: 428px) {
+              @media (max-width: $mobile) {
                 font-size: $large;
               }
             }
@@ -247,7 +240,7 @@ body {
         flex-direction: column;
         gap: 12px;
 
-        @media (max-width: 428px) {
+        @media (max-width: $mobile) {
         }
 
         &__text {
@@ -293,7 +286,7 @@ body {
       &__title {
         font-size: $large;
         font-weight: $bold;
-        line-height: 36px;
+        line-height: $extra-large-line-height;
         color: $purple;
       }
 
@@ -303,7 +296,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
 
-        @media (max-width: 428px) {
+        @media (max-width: $mobile) {
           grid-template-columns: repeat(1, 1fr);
           gap: 32px;
         }
@@ -335,13 +328,13 @@ body {
               font-size: $regular-2;
               font-weight: $bold;
               color: $purple;
-              line-height: 24px;
+              line-height: $large-line-height;
             }
 
             &__description {
               font-size: $regular-2;
               color: $grey-dark;
-              line-height: 24px;
+              line-height: $large-line-height;
             }
           }
         }
@@ -368,7 +361,7 @@ body {
 
       &__text {
         font-size: $regular-2;
-        line-height: 24px;
+        line-height: $large-line-height;
         color: $purple;
       }
 
@@ -379,7 +372,7 @@ body {
         font-size: $regular-2;
         font-weight: $semi-bold;
         color: $black;
-        line-height: 24px;
+        line-height: $large-line-height;
         position: relative;
         letter-spacing: 0.75em;
         margin-right: -0.75em;
@@ -407,7 +400,7 @@ body {
         color: $black;
         font-size: $regular-2;
         font-weight: $semi-bold;
-        line-height: 24px;
+        line-height: $large-line-height;
       }
     }
   }
@@ -439,7 +432,7 @@ body {
         display: none;
       }
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         flex-direction: column;
         overflow-x: hidden;
       }
@@ -477,7 +470,7 @@ body {
       gap: 12px;
       margin-bottom: 16px;
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         width: 100%;
       }
     }
@@ -493,7 +486,7 @@ body {
       gap: 12px;
       height: 80px;
 
-      @media (max-width: 428px) {
+      @media (max-width: $mobile) {
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
         overflow-x: hidden;
@@ -515,7 +508,7 @@ body {
         border-radius: 20px;
         padding: 4px 9px;
         font-size: $regular-1;
-        line-height: 24px;
+        line-height: $large-line-height;
       }
     }
 
@@ -545,7 +538,7 @@ body {
     &__link {
       color: $purple;
       font-size: $regular-2;
-      line-height: 24px;
+      line-height: $large-line-height;
       font-weight: $bold;
       text-decoration: none;
     }

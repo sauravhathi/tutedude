@@ -1,10 +1,12 @@
-import ReferAndEarn from "./refer-&-earn";
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export default function Home() {
+  const router = useRouter();
 
-  return (
-    <>
-      <ReferAndEarn />
-    </>
-  )
+  useEffect(() => {
+    router.push('/refer-&-earn');
+  }, []);
+
+  return null;
 }

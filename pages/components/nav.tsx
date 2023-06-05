@@ -15,7 +15,7 @@ export default function Nav() {
             </div>
             <div className="header__links">
                 {links.map((link, index) => (
-                    <Link href="/" key={index} className="header__link">
+                    <Link href="/" key={index} className="header__link" aria-label={link}>
                         {link}
                     </Link>
                 ))}
